@@ -2,6 +2,7 @@ package com.example.eliotshort.rockpaperscissors;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -44,7 +45,6 @@ public class GameActivity extends AppCompatActivity {
         gameResult.setText(game.game(counter));
         winCounter.setText("Wins: " + counter.getWinCounter());
         lossCounter.setText("Losses: " + counter.getLossCounter());
-
     }
 
     public void onRockButtonClick(View view){

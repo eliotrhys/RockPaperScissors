@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".GameActivity"
-                  android:label="Rock Paper Scissors"
+                  android:label=" "
                   android:parentActivityName=".WelcomeActivity"></activity>
     </application>
 

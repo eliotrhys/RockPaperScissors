@@ -28,7 +28,7 @@ public class LogicTest {
     public void gameWorks1(){
         testHand.getOptions().clear();
         testHand.getOptions().add("Rock");
-        assertEquals("Computer played: Rock\nPlayer played: Scissors\nComputer wins!", testGame.game(testCounter));
+        assertEquals("Computer played: Rock\nPlayer played: Scissors\nCOMPUTER WINS.", testGame.game(testCounter));
     }
 
 

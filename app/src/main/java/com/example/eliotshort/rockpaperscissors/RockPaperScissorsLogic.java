@@ -1,5 +1,8 @@
 package com.example.eliotshort.rockpaperscissors;
 
+import android.graphics.Typeface;
+import android.text.style.StyleSpan;
+
 /**
  * Created by eliotshort on 20/12/2017.
  */
@@ -33,7 +36,7 @@ public class RockPaperScissorsLogic{
                 (computerHand.equals("Spock") && playerHand.equals("Scissors"))
                 )
         {
-            win = "Computer played: " + computerHand + "\n\nPlayer played: " + playerHand + "\n\nCOMPUTER  WINS.";
+            win = "Computer played: " + computerHand + "\n\nPlayer played: " + playerHand + "\n\nCOMPUTER WINS.";
             counterLoss +=1;
             counter.setLossCounter(counterLoss);
         }
