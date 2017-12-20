@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_bright"
-    android:backgroundTint="@android:color/holo_blue_light"
+    android:background="#6eb8c5"
     tools:context="com.example.eliotshort.rockpaperscissors.GameActivity">
 
     <TextView
         android:id="@+id/game_result"
-        android:layout_width="357dp"
-        android:layout_height="217dp"
+        android:layout_width="354dp"
+        android:layout_height="155dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -24,13 +23,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.035" />
+        app:layout_constraintVertical_bias="0.144" />
 
 
     <ImageButton
         android:id="@+id/paper"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -47,8 +46,8 @@
 
     <ImageButton
         android:id="@+id/scissors"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -64,8 +63,8 @@
 
     <ImageButton
         android:id="@+id/lizard"
-        android:layout_width="79dp"
-        android:layout_height="75dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="8dp"
@@ -79,8 +78,8 @@
 
     <ImageButton
         android:id="@+id/spock"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="52dp"
         android:layout_marginTop="8dp"
@@ -94,8 +93,8 @@
 
     <ImageButton
         android:id="@+id/rock"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
