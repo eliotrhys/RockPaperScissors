@@ -33,16 +33,16 @@ public class RockPaperScissorsLogic{
                 (computerHand.equals("Spock") && playerHand.equals("Scissors"))
                 )
         {
-            win = "Computer played: " + computerHand + "\nPlayer played: " + playerHand + "\nComputer wins!";
+            win = "Computer played: " + computerHand + "\n\nPlayer played: " + playerHand + "\n\nCOMPUTER  WINS.";
             counterLoss +=1;
             counter.setLossCounter(counterLoss);
         }
         else if (playerHand == computerHand){
-            win = "Computer played: " + computerHand + "\nPlayer played: " + playerHand + "\nIt's a draw";
+            win = "Computer played: " + computerHand + "\n\nPlayer played: " + playerHand + "\n\nIT'S A DRAW.";
 
         }
         else{
-            win = "Computer played: " + computerHand + "\nPlayer played: " + playerHand + "\nPlayer wins!";
+            win = "Computer played: " + computerHand + "\n\nPlayer played: " + playerHand + "\n\nPLAYER WINS.";
             counterWin +=1;
             counter.setWinCounter(counterWin);
         }

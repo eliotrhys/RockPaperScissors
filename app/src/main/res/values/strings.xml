@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">RPSLS</string>
-    <string name="rules">Welcome to Rock Paper Scissors Lizard Spock!</string>
+    <string name="rules">R o c k \n P a p e r \n S c i s s o r s \n L i z a r d \n S p o c k</string>
 </resources>
