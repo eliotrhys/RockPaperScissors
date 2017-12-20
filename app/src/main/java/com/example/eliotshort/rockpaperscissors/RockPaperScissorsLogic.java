@@ -21,16 +21,16 @@ public class RockPaperScissorsLogic{
         int counterWin = counter.getLossCounter();
 
         if (
-                (computerHand == "Rock" && playerHand == "Scissors") |
-                (computerHand == "Rock" && playerHand == "Lizard") |
-                (computerHand == "Paper" && playerHand == "Rock") |
-                (computerHand == "Paper" && playerHand == "Spock") |
-                (computerHand == "Scissors" && playerHand == "Paper") |
-                (computerHand == "Scissors" && playerHand == "Lizard") |
-                (computerHand == "Lizard" && playerHand == "Paper") |
-                (computerHand == "Lizard" && playerHand == "Spock") |
-                (computerHand == "Spock" && playerHand == "Rock") |
-                (computerHand == "Spock" && playerHand == "Scissors")
+                (computerHand.equals("Rock") && playerHand.equals("Scissors")) |
+                (computerHand.equals("Rock") && playerHand.equals("Lizard")) |
+                (computerHand.equals("Paper") && playerHand.equals("Rock")) |
+                (computerHand.equals("Paper") && playerHand.equals("Spock")) |
+                (computerHand.equals("Scissors") && playerHand.equals("Paper")) |
+                (computerHand.equals("Scissors") && playerHand.equals("Lizard")) |
+                (computerHand.equals("Lizard")  && playerHand.equals("Paper")) |
+                (computerHand.equals("Lizard")  && playerHand.equals("Spock")) |
+                (computerHand.equals("Spock") && playerHand.equals("Rock"))  |
+                (computerHand.equals("Spock") && playerHand.equals("Scissors"))
                 )
         {
             win = "Computer played: " + computerHand + "\nPlayer played: " + playerHand + "\nComputer wins!";
