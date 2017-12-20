@@ -10,12 +10,13 @@
 
     <TextView
         android:id="@+id/game_result"
-        android:layout_width="352dp"
-        android:layout_height="269dp"
+        android:layout_width="357dp"
+        android:layout_height="217dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:text="Pick a hand below to start!"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="24sp"
@@ -25,50 +26,117 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.035" />
 
-    <Button
-        android:id="@+id/rock"
-        android:layout_width="100dp"
+
+    <ImageButton
+        android:id="@+id/paper"
+        android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:backgroundTint="@android:color/holo_orange_dark"
-        android:onClick="onRockButtonClick"
-        android:text="Rock"
-        android:textColor="@android:color/white"
+        android:background="@drawable/paper"
+        android:onClick="onPaperButtonClick"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_result"
+        app:layout_constraintVertical_bias="0.286" />
+
+
+    <ImageButton
+        android:id="@+id/scissors"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/scissors"
+        android:onClick="onScissorsButtonClick"
+        app:layout_constraintBottom_toTopOf="@+id/spock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toEndOf="@+id/paper"
+        app:layout_constraintTop_toBottomOf="@+id/game_result" />
+
+
+    <ImageButton
+        android:id="@+id/lizard"
+        android:layout_width="79dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/lizard"
+        android:onClick="onLizardButtonClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rock"
+        app:layout_constraintTop_toBottomOf="@+id/paper"
+        app:layout_constraintVertical_bias="0.51" />
+
+
+    <ImageButton
+        android:id="@+id/spock"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/spock"
+        android:onClick="onSpockButtonClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/scissors"
+        app:layout_constraintTop_toBottomOf="@+id/paper"
+        app:layout_constraintVertical_bias="0.51" />
+
+
+    <ImageButton
+        android:id="@+id/rock"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/rock"
+        android:onClick="onRockButtonClick"
+        app:layout_constraintBottom_toTopOf="@+id/lizard"
+        app:layout_constraintEnd_toStartOf="@+id/paper"
+        app:layout_constraintHorizontal_bias="0.656"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/game_result" />
 
-    <Button
-        android:id="@+id/paper"
-        android:layout_width="100dp"
-        android:layout_height="75dp"
+    <TextView
+        android:id="@+id/loss_counter"
+        android:layout_width="131dp"
+        android:layout_height="40dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:backgroundTint="@android:color/holo_orange_dark"
-        android:onClick="onPaperButtonClick"
-        android:text="Paper"
-        android:textColor="@android:color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/scissors"
-        app:layout_constraintStart_toEndOf="@+id/rock"
-        app:layout_constraintTop_toBottomOf="@+id/game_result" />
+        app:layout_constraintBottom_toTopOf="@+id/rock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.966"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_result"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <Button
-        android:id="@+id/scissors"
-        android:layout_width="100dp"
-        android:layout_height="75dp"
+    <TextView
+        android:id="@+id/win_counter"
+        android:layout_width="131dp"
+        android:layout_height="40dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:backgroundTint="@android:color/holo_orange_dark"
-        android:onClick="onScissorsButtonClick"
-        android:text="Scissors"
-        android:textColor="@android:color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/game_result" />
+        app:layout_constraintBottom_toTopOf="@+id/rock"
+        app:layout_constraintEnd_toStartOf="@+id/loss_counter"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_result"
+        app:layout_constraintVertical_bias="0.0" />
+
+
 </android.support.constraint.ConstraintLayout>

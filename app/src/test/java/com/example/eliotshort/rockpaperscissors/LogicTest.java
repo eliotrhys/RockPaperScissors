@@ -13,6 +13,7 @@ public class LogicTest {
 
     RockPaperScissorsLogic testGame;
     Hand testHand;
+    Counter testCounter;
 
     @Before
 
@@ -20,13 +21,24 @@ public class LogicTest {
 
         testHand = new Hand("Scissors");
         testGame = new RockPaperScissorsLogic(testHand);
+        testCounter = new Counter();
     }
 
     @Test
-    public void gameWorks(){
+    public void gameWorks1(){
         testHand.getOptions().clear();
         testHand.getOptions().add("Rock");
-        assertEquals("Computer played: Rock\nPlayer played: Scissors\nComputer wins!", testGame.game());
+        assertEquals("Computer played: Rock\nPlayer played: Scissors\nComputer wins!", testGame.game(testCounter));
+    }
+
+
+    @Test
+    public void canChangeCounter(){
+        testHand.getOptions().clear();
+        testHand.getOptions().add("Rock");
+        testGame.game(testCounter);
+        testGame.game(testCounter);
+        assertEquals(2, testCounter.getLossCounter());
     }
 
 }

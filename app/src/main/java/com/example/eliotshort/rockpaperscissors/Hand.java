@@ -20,6 +20,8 @@ public class Hand {
         options.add("Rock");
         options.add("Paper");
         options.add("Scissors");
+        options.add("Lizard");
+        options.add("Spock");
     }
 
     public String getPlay() {
